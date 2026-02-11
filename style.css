@@ -1,0 +1,71 @@
+/* 全体の設定 */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* カード風のコンテナ */
+#app {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* 画像を表示するエリア */
+#cat-container {
+    width: 100%;
+    min-height: 300px;
+    background-color: #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cat-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* ボタンのデザイン */
+#refresh-btn {
+    background-color: #ff9f43;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(255, 159, 67, 0.3);
+}
+
+#refresh-btn:hover {
+    background-color: #ff8c1a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 159, 67, 0.4);
+}
+
+#refresh-btn:active {
+    transform: translateY(0);
+}
